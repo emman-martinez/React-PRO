@@ -1,0 +1,82 @@
+[
+  {
+    "type": "input",
+    "name": "firstName",
+    "label": "First Name",
+    "placeholder": "Enter your first name",
+    "value": "Juan Carlos",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First name is required"
+      },
+      {
+        "type": "minLength",
+        "value": 3,
+        "message": "First name must be at least 3 characters long"
+      },
+      {
+        "type": "maxLength",
+        "value": 20,
+        "message": "First name must be at most 20 characters long"
+      }
+    ]
+  },
+  {
+    "type": "input",
+    "name": "lastName",
+    "label": "Last Name",
+    "placeholder": "Enter your last name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Last name is required"
+      },
+      {
+        "type": "minLength",
+        "value": 3,
+        "message": "Last name must be at least 3 characters long"
+      },
+      {
+        "type": "maxLength",
+        "value": 20,
+        "message": "Last name must be at most 20 characters long"
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "label": "Email",
+    "placeholder": "Enter your email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Please enter a valid email address"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      { "id": "chess", "label": "Chess" },
+      { "id": "checkers", "label": "Checkers" },
+      { "id": "poker", "label": "Poker" }
+    ],
+    "validations": [
+      {
+        "type": "required",
+        "message": "Please select your favorite game"
+      }
+    ]
+  }
+]
